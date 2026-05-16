@@ -95,7 +95,7 @@ function App() {
   const [nouvelleReponse, setNouvelleReponse] = useState('');
   const [confirmation, setConfirmation] = useState('');
 
-  const BASE_URL = 'http://localhost:3000/api/v1/blagues';
+const BASE_URL = 'https://carambar-blague-api.onrender.com/api/v1/blagues';
 
   const recupererBlague = async () => {
     setChargement(true);
