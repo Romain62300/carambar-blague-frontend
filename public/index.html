@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               connect-src 'self' https://carambar-blague-api.onrender.com;
+               style-src 'self' https://cdn.jsdelivr.net;
+               script-src 'self';
+               object-src 'none';" />
     <title>Blagues Carambar & Co</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      integrity="sha384-HtMZLkYo+pR5/u7zCzXxMJP6QoNnQJt1qkHM0EaOPvGDIzaVZbmYr/TlvUZ/sKAg"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   </head>
   <body class="bg-yellow-100">
